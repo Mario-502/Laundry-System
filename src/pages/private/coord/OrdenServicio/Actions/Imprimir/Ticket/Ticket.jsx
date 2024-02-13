@@ -117,10 +117,11 @@ const Ticket = React.forwardRef((props, ref) => {
             <div className="receipt_header">
               {/* <div className="name-bussiness">
                 <h1 className="title">LAVANDERIA</h1>
-                <h1 className="name">{InfoNegocio?.name}</h1>
+             
               </div> */}
               <div className="name-bussiness">
                 <img className="logo-b" src={Logo} alt="" />
+                {InfoNegocio.numero.state ? <span className="name">telf : {InfoNegocio?.numero.info}</span> : null}
               </div>
               <table className="info-table">
                 <tbody>

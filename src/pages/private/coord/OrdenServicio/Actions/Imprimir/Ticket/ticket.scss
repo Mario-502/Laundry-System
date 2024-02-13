@@ -28,9 +28,18 @@ $sText: 0.8em;
             text-align: center;
             .name-bussiness {
                 border-bottom: 0.2mm solid #000;
+                position: relative;
+                width: 100%;
+                padding-bottom: 8px;
                 .logo-b {
                     width: 95%;
                     height: 100px;
+                }
+                span {
+                    position: absolute;
+                    right: 16px;
+                    bottom: 2px;
+                    font-weight: 600;
                 }
             }
             .info-table {
