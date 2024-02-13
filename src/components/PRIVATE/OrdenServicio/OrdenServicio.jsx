@@ -890,24 +890,24 @@ const OrdenServicio = ({ mode, action, onAction, iEdit, onReturn, iDelivery }) =
             <div className="actions">
               <div className="button-actions">
                 <BotonModel
-                  name="Agregar Toalla"
+                  name="Agregar Edredon"
                   tabI="7"
                   disabled={iEdit ? (iEdit.modeEditAll ? false : true) : false}
                   listenClick={() =>
                     formik.setFieldValue('productos', [
                       ...formik.values.productos,
-                      addRowGarment('Toalla', getPricePrenda('Toalla'), false),
+                      addRowGarment('Edredon', getPricePrenda('Edredon'), false),
                     ])
                   }
                 />
                 <BotonModel
-                  name="Ropa x Kilo"
+                  name="Ropa por Libra"
                   tabI="8"
                   disabled={iEdit ? (iEdit.modeEditAll ? false : true) : false}
                   listenClick={() =>
                     formik.setFieldValue('productos', [
                       ...formik.values.productos,
-                      addRowGarment('Ropa x Kilo', getPricePrenda('Ropa x Kilo'), false),
+                      addRowGarment('Ropa por Libra', getPricePrenda('Ropa por Libra'), false),
                     ])
                   }
                 />

@@ -12,6 +12,7 @@ import { useSelector } from 'react-redux';
 const {
   Abrigo,
   // Alfombra,
+  LavadoMano,
   Almohada,
   Camisa,
   Casaca,
@@ -27,8 +28,10 @@ const {
   Pantalon,
   Polo,
   Saco,
-  Tapete,
   Zapatillas,
+  ServicioCompleto,
+  Lavado,
+  Desmanchado,
 } = Prendas;
 
 const SelectItem = forwardRef(({ image, label, ...others }, ref) => (
@@ -61,6 +64,16 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
     const productosDB = infoProductos;
     // Producto - precio - stado
     const info = [
+      {
+        image: Lavado,
+        label: 'Servicio de Lavado',
+        value: ['Servicio de Lavadoo', getPricePrenda(productosDB, 'Servicio de Lavado'), false],
+      },
+      {
+        image: ServicioCompleto,
+        label: 'Servicio Completo',
+        value: ['Servicio Completo', getPricePrenda(productosDB, 'Servicio Completo'), false],
+      },
       // {
       //   image: Edredon,
       //   label: 'Edredon',
@@ -76,7 +89,16 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
         label: 'Cubrecama',
         value: ['Cubrecama', getPricePrenda(productosDB, 'Cubrecama'), false],
       },
-
+      {
+        image: LavadoMano,
+        label: 'Lavado a Mano',
+        value: ['Lavado a Mano', getPricePrenda(productosDB, 'Lavado a Mano'), false],
+      },
+      {
+        image: Desmanchado,
+        label: 'Desmanchado',
+        value: ['Desmanchado', getPricePrenda(productosDB, 'Desmanchado'), false],
+      },
       {
         image: Frazada,
         label: 'Frazada',
@@ -84,18 +106,18 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
       },
       {
         image: Manta,
-        label: 'Manta',
-        value: ['Manta', getPricePrenda(productosDB, 'Manta'), false],
+        label: 'Poncho',
+        value: ['Poncho', getPricePrenda(productosDB, 'Poncho'), false],
       },
       {
         image: Casaca,
-        label: 'Casaca',
-        value: ['Casaca', getPricePrenda(productosDB, 'Casaca'), false],
+        label: 'Chumpa',
+        value: ['Chumpa', getPricePrenda(productosDB, 'Chumpa'), false],
       },
       {
         image: Terno,
-        label: 'Terno',
-        value: ['Terno', getPricePrenda(productosDB, 'Terno'), false],
+        label: 'Traje',
+        value: ['Traje', getPricePrenda(productosDB, 'Traje'), false],
       },
       {
         image: Saco,
@@ -108,9 +130,9 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
         value: ['Camisa', getPricePrenda(productosDB, 'Camisa'), false],
       },
       {
-        image: Polo,
-        label: 'Polo',
-        value: ['Polo', getPricePrenda(productosDB, 'Polo'), false],
+        image: Pantalon,
+        label: 'Pantalon',
+        value: ['Pantalon', getPricePrenda(productosDB, 'Pantalon'), false],
       },
       {
         image: Abrigo,
@@ -118,19 +140,19 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
         value: ['Abrigo', getPricePrenda(productosDB, 'Abrigo'), false],
       },
       {
-        image: Pantalon,
-        label: 'Pantalon',
-        value: ['Pantalon', getPricePrenda(productosDB, 'Pantalon'), false],
-      },
-      {
         image: Zapatillas,
-        label: 'Zapatillas',
-        value: ['Zapatillas', getPricePrenda(productosDB, 'Zapatillas'), false],
+        label: 'Zapato',
+        value: ['Zapato', getPricePrenda(productosDB, 'Zapato'), false],
       },
       {
         image: Jean,
-        label: 'Jean',
-        value: ['Jean', getPricePrenda(productosDB, 'Jean'), false],
+        label: 'Vaquero',
+        value: ['Vaquero', getPricePrenda(productosDB, 'Vaquero'), false],
+      },
+      {
+        image: Polo,
+        label: 'Playera',
+        value: ['Playera', getPricePrenda(productosDB, 'Playera'), false],
       },
       {
         image: Alfombra,
@@ -147,11 +169,6 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
         image: Almohada,
         label: 'Almohada',
         value: ['Almohada', getPricePrenda(productosDB, 'Almohada'), false],
-      },
-      {
-        image: Tapete,
-        label: 'Tapete',
-        value: ['Tapete', getPricePrenda(productosDB, 'Tapete'), false],
       },
       {
         image: Otro,

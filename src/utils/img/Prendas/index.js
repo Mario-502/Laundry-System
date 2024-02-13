@@ -24,17 +24,11 @@ import CubreColchon from './cubrecolchon.png';
 import Funda from './funda.png';
 import LavadoMano from './lavado-mano.png';
 import Sabanas from './sabanas.png';
-
 import Planchado from './planchado.png';
-import Suavitel from './suavitel.png';
 import Bolsa from './bolsa.png';
-import Vernel from './vernel.png';
-import Refresco from './refresco.png';
-import Jugo from './jugo.png';
-import Clorets from './clorets.png';
-import Trident from './trident.png';
-import Sabritas from './sabritas.png';
-import Paletas from './paletas.png';
+import ServicioCompleto from './servicio-completo.png';
+import Lavado from './lavado.png';
+import Desmanchado from './desmanchado.png';
 
 const Prendas = {
   Abrigo,
@@ -64,15 +58,10 @@ const Prendas = {
   LavadoMano,
   Sabanas,
   Planchado,
-  Suavitel,
   Bolsa,
-  Vernel,
-  Refresco,
-  Jugo,
-  Clorets,
-  Trident,
-  Sabritas,
-  Paletas,
+  ServicioCompleto,
+  Lavado,
+  Desmanchado,
 };
 
 export default Prendas;

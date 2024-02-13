@@ -518,22 +518,22 @@ const AddOld = () => {
               <div className="actions">
                 <div className="button-actions">
                   <BotonModel
-                    name="Agregar Toalla"
+                    name="Edredon"
                     tabI="6"
                     listenClick={() =>
                       formik.setFieldValue('productos', [
                         ...formik.values.productos,
-                        addRowGarment('Toalla', getPricePrenda('Toalla'), false),
+                        addRowGarment('Edredon', getPricePrenda('Edredon'), false),
                       ])
                     }
                   />
                   <BotonModel
-                    name="Ropa x Kilo"
+                    name="Ropa por Libra"
                     tabI="7"
                     listenClick={() =>
                       formik.setFieldValue('productos', [
                         ...formik.values.productos,
-                        addRowGarment('Ropa x Kilo', getPricePrenda('Ropa x Kilo'), false),
+                        addRowGarment('Ropa por Libra', getPricePrenda('Ropa por Libra'), false),
                       ])
                     }
                   />
