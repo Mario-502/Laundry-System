@@ -12,6 +12,7 @@ import { modals } from '@mantine/modals';
 
 import { persistLocalStorage } from '../../../utils/persistence.local-storage/localStorage.util';
 import './login.scss';
+import Logo from '../../../utils/img/Logo/logoComunitariaWhite.png';
 import axios from 'axios';
 
 import { GetInfoUser } from '../../../redux/actions/aUser';
@@ -19,8 +20,6 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Notify } from '../../../utils/notify/Notify';
 import { socket } from '../../../utils/socket/connect';
-
-// import { ReactComponent as Logo } from '../../../utils/img/Logo/logoMasterClean.svg';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -132,13 +131,14 @@ const Login = () => {
 
   return (
     <>
+      {/* <ParticlesBackgound /> */}
       <div className="container-login">
         <div className="full-height">
           <div className="card-3d-wrap">
             <div className="card-3d-wrapper">
               <div className="card-front">
                 <div className="center-wrap">
-                  {/* <Logo className="logo" /> */}
+                  <img src={Logo} className="logo" />
                   <form onSubmit={handleLogin} className="section">
                     <h4>Iniciar Sesion</h4>
                     <div className="form-group">

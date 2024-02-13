@@ -14,9 +14,16 @@
         top: 0;
         background: var(--primary-color);
         display: flex;
-        h1 {
-            color: #fff;
-            margin: 0 20px;
+        // h1 {
+        //     color: #fff;
+        //     margin: 0 20px;
+        // }
+        .svg-logo {
+            width: 250px;
+            height: 62.5px;
+            margin: auto;
+            padding: 1px 20px;
+            fill: #fff;
         }
     }
     .coord-style {

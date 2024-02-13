@@ -28,22 +28,11 @@ $sText: 0.8em;
             text-align: center;
             .name-bussiness {
                 border-bottom: 0.2mm solid #000;
-                padding-bottom: 5px;
-                h1 {
-                    text-align: left;
-                    text-transform: uppercase;
-                    font-weight: 800;
-                    color: #000;
-                    line-height: 1.2;
-                }
-                .title {
-                    font-size: 4mm;
-                }
-                .name {
-                    font-size: 6mm;
+                .logo-b {
+                    width: 95%;
+                    height: 100px;
                 }
             }
-
             .info-table {
                 width: 100%;
                 border-collapse: collapse;
@@ -400,6 +389,7 @@ $sText: 0.8em;
         transform-origin: top left;
         width: $widthG_mm;
         padding: 0 5px;
+        padding-top: 0;
         visibility: visible;
         box-shadow: none;
 
