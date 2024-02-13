@@ -672,14 +672,16 @@ const OrdenServicio = ({ mode, action, onAction, iEdit, onReturn, iDelivery }) =
                 {/* <h1>{InfoNegocio?.name}</h1>
                 <h2>LAVANDERIA</h2> */}
                 <Logo className="logo-bussiness" />
-                {Object.keys(InfoNegocio).length > 0 ? (
-                  <h3>
-                    {DiasAttencion(InfoNegocio?.horario.dias)}
-                    <br />
-                    {HoraAttencion(InfoNegocio?.horario.horas)}
-                  </h3>
-                ) : null}
-                {InfoNegocio?.numero?.state ? <h3>Cel.: {InfoNegocio?.numero?.info}</h3> : null}
+                <div className="sub-info">
+                  {Object.keys(InfoNegocio).length > 0 ? (
+                    <h3>
+                      {DiasAttencion(InfoNegocio?.horario.dias)}
+                      <br />
+                      {HoraAttencion(InfoNegocio?.horario.horas)}
+                    </h3>
+                  ) : null}
+                  {/* {InfoNegocio?.numero?.state ? <h3>Cel.: {InfoNegocio?.numero?.info}</h3> : null} */}
+                </div>
               </div>
             </div>
             <div className="n-recibo">
